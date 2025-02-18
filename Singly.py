@@ -7,12 +7,12 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def insert(self, data):
+    def insert(self,data):
         new_node = Node(data)
         if not self.head:
             self.head = new_node
             return
-        temp = self.head
+        temp = self.head 
         while temp.next:
             temp = temp.next
         temp.next = new_node
@@ -20,11 +20,11 @@ class LinkedList:
     def display(self):
         temp = self.head
         while temp:
-            print(temp.data, end = " -> ")
+            print(temp.data, end= " -> ")
             temp = temp.next
         print("None")
 
-#example usage
+#example
 ll = LinkedList()
 ll.insert("Pizza")
 ll.insert("Burger")
